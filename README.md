@@ -1,2 +1,2 @@
-# MyResume-Portfolio
+# MyResume
 A simple resume webpage.
