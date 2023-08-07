@@ -28,6 +28,7 @@
         </div>
     </header>
 
+    <!--------------Home Section-------------->
     <section id="home" class="home">
         <div class="home-content">
             <h1>Hi! I'm Vimukthi Madushan</h1>
@@ -49,13 +50,20 @@
             </div>
 
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me!</a>
+                <a id="pdfLink" href="./Resources/SE.2019.018__CV-1.pdf" download="SE.2019.018__CV-1.pdf" class="btn">Download CV</a>
+                <script>
+                    // Get references to the anchor elements
+                    const pdfLink = document.getElementById('pdfLink');
+                    // Add an event listener to the link
+                    pdfLink.addEventListener('click', () => {
+                      pdfLink.click();
+                    });
+                  </script>
             </div>
             <div class="social-icon">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-linkedin'></i></a>
-                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010117337554&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://medium.com/@vimukthikulathilaka"><i class='bx bxl-medium'></i></i></a>
                 <a href=""><i class='bx bxl-whatsapp' ></i></a>
 
             </div>
