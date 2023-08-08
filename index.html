@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"> <!--stylesheet-->
+    <link rel="stylesheet" href="./CSS/styles.css"> <!--stylesheet-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Boxicons for social media and other-->
+    <script src="https://smtpjs.com/v3/smtp.js"> </script><!--stmpjs-for emailing-->
     <title>Vimukthi Madushan</title>
 </head>
 <body>
-    <script src="./scripts.js"></script>
+    
     
     <!--------------Header-------------->
 
@@ -74,6 +75,39 @@
             </div>
         </div>
     </section>
+    <!--------------Contact Section------------>    
     
+        
+    <section id="contact" class="contact">
+        <div class="main-text">
+            <span>Ask me any question</span>
+            <h2>Contact Me</h2>
+            <!--<button class="toggle-btn" onclick="toggle()"><h2>Contact Me</h2></button>-->
+        </div>
+
+        <div id="form-toggle">
+        <form class="form-contact">
+    
+          <input type="text" id="name" required placeholder="Your Name">
+  
+          
+          <input type="email" id="email" required placeholder="Your Email">
+            <input type="number" id="mob-number"placeholder="Your Mobile No" >
+          <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+   
+          <div class="form-btn">
+            <button id="submit" type="submit">Send Message</button>
+          </div>
+        </form>
+        </div>
+       <!--  <div id="pop-up" class="pop-up">
+            <img src="./Images/Green-tick.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Your response has been submitted Successfully </p>
+            <button onclick="closePopup()">Ok</button>
+        </div>--> 
+      </section>
+      <script src="./Js/scripts.js"></script>
+      <script src="./Js/emailsender.js"></script>
 </body>
 </html>
