@@ -34,9 +34,24 @@
  body {
     font-family: 'Poppins', sans-serif;
      background-color: var(--bg-color);
-     color: var(--text-color);
- 
- }
+     background: linear-gradient(-45deg, #f7f5f5, #6640ad, #106a8d, #1fd656);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
  header{
      display: flex;
      align-items: center;
@@ -128,6 +143,7 @@
    align-items: center;
    padding: 6rem ;
    overflow: hidden;
+   
  
  }
  .img-box img{
@@ -135,6 +151,7 @@
      max-height: 100%;
      object-fit: contain;
      border-radius: 50%;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
  
  }
  
@@ -166,7 +183,7 @@
  }
  
  .btn-box a.btn:hover{
-     background-color: var(--hover-color);
+     background-color: var(--hover-color)   ;
      background: var(--bg-color);
  }
  
@@ -311,5 +328,61 @@
      cursor: pointer;
      box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 
-}
+}*/
 
+
+.toggle{
+    position: relative;
+    margin:2em;
+  }
+  .toggle input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    visibility: 0;
+  }
+  .toggle h1{
+    color:white;
+    padding:1em;
+    position: relative;
+    font-size: 1rem;
+  }
+  .toggle label::before{
+    content:"";
+    display: inline-block;
+    border: 15px solid transparent;
+    border-left:20px solid white;
+  }
+  .toggle label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .toggle div.toggle-content{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    background-color: rgb(151, 151, 160);
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  .toggle div.toggle-content p {
+    padding:2em;
+
+  }
+  .toggle input:checked ~ h1 label::before{
+    border-left:15px solid transparent;
+    border-top:20px solid white;
+    margin-top:12px;
+    margin-right:10px;
+  }
+  .toggle input:checked ~ h1 ~ div.toggle-content{
+    max-height:100px;
+  }
+  .toggle a{
+    color:steelblue;
+  }
