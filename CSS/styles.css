@@ -484,29 +484,34 @@
     }
     .navigateList {
       display: none;
-    }
-  
-    #menu-icon {
-      display: block;
-    }
-    .navigateList {
-      display: none;
       flex-direction: column;
       align-items: center;
       position: absolute;
       top: 70px;
       left: 0;
-      background-color: #fff;
+      background-color: #7165b3;
       width: 100%;
-      padding: 10px 0;
+      padding: 10px 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      transform: translateY(-100%);
-      transition: transform 0.3s ease-in-out;
+      max-height: 0; 
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      border-radius: 5px; 
   }
-
+  
   .navigateList.open {
-      transform: translateY(0);
+      max-height: 300px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
   }
+  
+  
+    #menu-icon {
+      display: block;
+    }
+
+  
   .toggle-content p {
     font-size: 0.9rem;
   }
