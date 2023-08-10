@@ -9,6 +9,14 @@ function toggle(){
     }
 }
 
+// pdf download
+ // Get references to the anchor elements
+ const pdfLink = document.getElementById('pdfLink');
+ // Add an event listener to the link
+ pdfLink.addEventListener('click', () => {
+   pdfLink.click();
+ });
+
 
 //Navigation 
  const menuIcon = document.getElementById('menu-icon');
