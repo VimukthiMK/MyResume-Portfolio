@@ -35,7 +35,7 @@
     font-family: 'Poppins', sans-serif;
      background-color: var(--bg-color);
      background: linear-gradient(-45deg, #f7f5f5, #6640ad, #106a8d, #1fd656);
-	background-size: 400% 400%;
+	background-size: 500% 500%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
@@ -95,11 +95,13 @@
      color: var(--secon-bg-color);
      display: none;
  }
- section{
-   padding: 100px 10%; 
-  
- 
+
+.workExperience .about .skills {
+    padding: 20px 10%;
  }
+ 
+
+
 
  .home{
     min-height: 100vh;
@@ -109,6 +111,7 @@
     grid-template-columns: repeat(2,1fr); 
     align-items: center;
     grid-gap: 4rem;
+    padding: 100px 10%;
  
  }
  .home-content{
@@ -116,6 +119,9 @@
      
  
  
+ }
+ .home-content .about-text{
+    margin-top: 30px;
  }
  .home-content h1{
      font-size: var(--big-font);
@@ -126,16 +132,11 @@
      font-weight: 600;
  }
  .change-text h3{
-     display: inline-flex;
      margin: 0;
-     vertical-align: top;
+     
  
  }
- .change-text h3 .word{
-     position: absolute;
-     display: flex;
-     opacity: 0;
- }
+ 
  
  .img-box{
      display: flex;
@@ -225,6 +226,7 @@
 
  .contact{
     background-color: var(--secon-bg-color);
+    padding: 100px 10%;
  }
  .contact form{
     text-align: center;
@@ -271,6 +273,7 @@
     background-color: var(--hover-color);
     background: var(--bg-color);
 } 
+
 
 /*#form-toggle{
     display: none;
@@ -349,6 +352,7 @@
     padding:1em;
     position: relative;
     font-size: 1rem;
+    
   }
   .toggle label::before{
     content:"";
@@ -386,3 +390,8 @@
   .toggle a{
     color:steelblue;
   }
+
+  
+ 
+
+    
