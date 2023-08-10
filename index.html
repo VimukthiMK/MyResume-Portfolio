@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styles.css"> <!--stylesheet-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Boxicons for social media and other-->
-    <script src="https://smtpjs.com/v3/smtp.js"> </script><!--stmpjs-for emailing-->
+    <script src="https://smtpjs.com/v3/smtp.js"> </script><!--stmp js-for emailing-->
     <title>Vimukthi Madushan</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <ul class="navigateList">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#workExperience">Work Experience</a></li>
+            <li><a href="#acaQualifications">Academic Qualifications</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,6 +31,13 @@
     
     <!--------------Home Section-------------->
     <section id="home" class="home">
+      <!-------Home Image------->
+        <div class="home-img">
+            <div class="img-box">
+                <img src="./Images/Vimukthi_Madushan.jpg" " alt="">
+            </div>
+        </div>
+        <!-------Home Content------->
         <div class="home-content">
             <h1>Hi! I'm Vimukthi Madushan</h1>
             <div class="change-text">
@@ -38,6 +45,7 @@
                     <span class="word">Software Developer</span>
                 </h3>
             </div>
+
             <p class="about-text">Welcome to my portfolio website. I am a passionate developer with experience in web technologies. Here, you can learn more about my projects and contact me for any inquiries. </p>
 
             <div class="info-box">
@@ -46,7 +54,7 @@
                     <span>vimukthikulathilaka@gmail.com</span>
                 </div>
             </div>
-
+            <!-------Download Button------->
             <div class="btn-box">
                 <a id="pdfLink" href="./Resources/SE.2019.018__CV-1.pdf" download="SE.2019.018__CV-1.pdf" class="btn">Download CV</a>
                 <script>
@@ -58,19 +66,17 @@
                     });
                   </script>
             </div>
+            <!-------Social Media icons------->
             <div class="social-icon">
                 <a href="https://www.facebook.com/profile.php?id=100010117337554&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/VimukthiMK"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://medium.com/@vimukthikulathilaka"><i class='bx bxl-medium'></i></i></a>
-                <a href=""><i class='bx bxl-whatsapp' ></i></a>
+                
 
             </div>
         </div>
-        <div class="home-img">
-            <div class="img-box">
-                <img src="./Images/Vimukthi_Madzfushan.jpg" " alt="">
-            </div>
-        </div>
+       
     </section>
 
     <!--------------About Section------------>
@@ -78,21 +84,53 @@
     <section id="about" class="about">
             <div class="toggle">
                 <input type="checkbox" id="faq-1">
-                <h1><label for="faq-1">About Me</label></h1>
+                <h1><label for="faq-1">About </label></h1>
                 <div class="toggle-content">
-                  <p>This a very very simple accordion.</p>
+                  <h2>About Myself</h2>
+                  <p>
+                    Welcome to my profile! I'm an enthusiastic and forward-looking undergraduate with a strong determination to succeed. 
+                    Currently, I'm searching for an internship that can offer valuable experiences and help me expand my skill set, shaping 
+                    my future career path. My main interests revolve around Data Science and Full Stack Development, where I'm captivated by the insights data can provide
+                       and the art of creating user-friendly web applications. These fields intrigue me due to their potential to revolutionize 
+                       industries and generate innovative solutions.
+                    </p>
+                    <h2>Beyond the Screen</h2>
+                    <p>
+                      Outside of my professional pursuits, I believe in leading a well-rounded life. I find happiness in exploring new places and 
+                      experiencing diverse cultures through travel. Music isn't just a tune to me; it's a way to express myself and find inspiration.
+                       I'm also an avid gamer, enjoying the blend of strategy and creativity in virtual worlds. Additionally, my curiosity about the 
+                       fusion of technology and mobility is fueled by my fascination with automobiles.
+                    </p>
                 </div>
               </div>
     </section> 
 
-    <!--------------Work Experience Section------------>
+    <!--------------Academic Qualifications Section------------>
 
-    <section id="workExperience" class="workExperience">
+    <section id="acaQualifications" class="acaQualifications">
         <div class="toggle">
             <input type="checkbox" id="faq-2">
-            <h1><label for="faq-2">Working Experience</label></h1>
+            <h1><label for="faq-2">Academic Qualifications</label></h1>
             <div class="toggle-content">
-              <p>This a very very simple accordion.</p>
+              <div class="edulist">
+                <ul class="sessions">
+                    <li>
+                      <div class="header">University of Kelaniya</div>
+                      <p>Bsc(Hons)Software Engineering | 2021-Present <br>
+                        Current GPA : 3.5390</p>
+                    </li>
+                    <li>
+                      <div class="header">Ananda College, Colombo 10</div>
+                      <p>G.C.E Advanced Level Examination - 2019 <br>
+                        Physical Science Stream | 2A 1C | z-score - 1.6770</p>
+                    </li>
+                    <li>
+                        <div class="header">Ananda College, Colombo 10</div>
+                        <p>G.C.E Ordinary Level Examination - 2016 <br> 
+                            Results : 9A's</p>
+                      </li>
+                    </ul>
+              </div>
             </div>
           </div>
 </section>  
@@ -103,7 +141,39 @@
         <input type="checkbox" id="faq-3">
         <h1><label for="faq-3">Skills</label></h1>
         <div class="toggle-content">
-          <p>This a very very simple accordion.</p>
+          <div class="skill-img">
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="./Images/webdev.jpg" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="./Images/webdev.jpg" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="./Images/dscience.jpg" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="./Images/dscience.jpg" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="./Images/mobdev.jpg" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="./Images/mobdev.jpg" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__face card__face--front">
+                <img src="./Images/photography.avif" />
+              </div>
+              <div class="card__face card__face--back">
+                <img src="./Images/photography.avif" />
+              </div>
+            </div>
         </div>
       </div>
 </section> 
@@ -140,6 +210,7 @@
       </section>
       <script src="./Js/scripts.js"></script>
       <script src="./Js/emailsender.js"></script>
+      
       
       
     </body>

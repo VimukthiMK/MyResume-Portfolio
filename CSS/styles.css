@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&display=swap');
 
 :root{
-    --text-color: #f5f5f5;
+    --text-color: #000000;
     --hover-color: #12f7ff;
-    --bg-color: #470c40;
+    --bg-color: #51438b;
     --secon-bg-color: #292e33;
     --big-font:2.5rem;
     --norma-font:2rem;
@@ -34,13 +34,13 @@
  body {
     font-family: 'Poppins', sans-serif;
      background-color: var(--bg-color);
-     background: linear-gradient(-45deg, #f7f5f5, #6640ad, #106a8d, #1fd656);
+     /* background: linear-gradient(-45deg, #f7f5f5, #6640ad, #106a8d, #1fd656); 
 	background-size: 500% 500%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 100vh;*/
 }
 
-@keyframes gradient {
+/* @keyframes gradient { 
 	0% {
 		background-position: 0% 50%;
 	}
@@ -50,7 +50,13 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}*/
+
+.acaQualification .about .skills {
+  padding: 20px 10%;
 }
+
+/* ------------Header Section ----------- */
 
  header{
      display: flex;
@@ -96,12 +102,10 @@
      display: none;
  }
 
-.workExperience .about .skills {
-    padding: 20px 10%;
- }
+ 
  
 
-
+/* ------------Home Section ----------- */
 
  .home{
     min-height: 100vh;
@@ -117,8 +121,6 @@
  .home-content{
      max-width: 600px;
      
- 
- 
  }
  .home-content .about-text{
     margin-top: 30px;
@@ -153,7 +155,12 @@
      object-fit: contain;
      border-radius: 50%;
      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     transition: transform .5s;
+   
  
+ }
+ .img-box img:hover{
+  transform: scale(1.2);
  }
  
  .btn-box{
@@ -274,66 +281,7 @@
     background: var(--bg-color);
 } 
 
-
-/*#form-toggle{
-    display: none;
-}
-
-.toggle-btn{
-    border: none;
-    
-}
-
-
-.pop-up{
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.pop-up img {
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
-}
-
-.pop-up h2 {
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-
-}
-
-.pop-up button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #6fd649;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-     cursor: pointer;
-     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-
-}*/
-
-
+/* ------------Toggle ----------- */
 .toggle{
     position: relative;
     margin:2em;
@@ -370,12 +318,13 @@
     max-height:0px;
     overflow: hidden;
     transition:max-height 0.5s;
-    background-color: rgb(151, 151, 160);
+    background-color: rgb(45, 30, 88);
     box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 15px;
   }
   .toggle div.toggle-content p {
     padding:2em;
+    color: #00f7ff;
 
   }
   .toggle input:checked ~ h1 label::before{
@@ -385,13 +334,199 @@
     margin-right:10px;
   }
   .toggle input:checked ~ h1 ~ div.toggle-content{
-    max-height:100px;
+    max-height:fit-content;
   }
   .toggle a{
     color:steelblue;
   }
 
-  
- 
+  /* ------------Academic Qualifications Section ----------- */
 
+ .edu-content ul{
+    font-weight: 500;
+    padding-left: 5%;
+    letter-spacing: 2px;
+    list-style: none;
+    line-height: 1.0;
     
+    
+  }
+  .eduList{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  background: linear-gradient(45deg, #209cff, #68e0cf);
+  padding: 3rem 0;
+}
+  
+.toggle-content ul, li {
+    list-style: none;
+    padding: 0;
+  }
+ 
+  .toggle-content h1 {
+    font-size: 1.1rem;
+    font-family: sans-serif;
+  }
+  .toggle-content .sessions {
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+  }
+  .toggle-content li {
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #abaaed;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  .toggle-content li:last-child {
+    border: 0px;
+    padding-bottom: 0;
+  }
+  .toggle-content li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: rgb(107, 122, 39);
+    border: 1px solid #4e5ed3;
+    box-shadow: 3px 3px 0px #43c032;
+    box-shadow: 3px 3px 0px #5820be;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+  }
+  .toggle-content .header {
+    color: #49d611;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+  
+  .edulist{
+    padding: 20px;
+  }
+
+  .about .toggle-content h2{
+    text-align: center;
+    color: #eeedf3;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  }
+
+  /* ------------Skills Section ----------- */
+  
+  .skill-img {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    perspective: 800px;
+    padding: 30px;
+    gap: 40px;
+    
+    
+  }
+  .skill-img .card {
+    position: relative;
+    width: 240px;
+    height: 300px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+  }
+  .skill-img .card:hover {
+    transform: rotateY(0.5turn);
+  }
+  .skill-img .card .card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  }
+  .skill-img .card .card__face img {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .skill-img .card .card__face--back {
+    transform: rotateY(0.5turn);
+  
+  }
+  
+  /* ------------Media Queries ----------- */
+
+  @media screen and (min-width: 601px) {
+    .toggle-content .time {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .toggle-content .header {
+      margin-bottom: 0.3rem;
+      font-size: 0.85rem;
+    }
+      .skill-img{
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+    .home{
+      grid-template-columns: 1fr;
+        padding: 50px 5%;
+    }
+    .navigateList {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+    .navigateList {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      padding: 10px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .navigateList.open {
+      transform: translateY(0);
+  }
+  .toggle-content p {
+    font-size: 0.9rem;
+  }
+
+  .social-icon{
+    margin: 20px auto;
+  }
+
+  .btn-box{
+   justify-content: center; 
+  }
+  }
+
+    @media (max-width: 767px) {
+      
+  }
+  .toggle-content p {
+    color: #a01e1e;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+ 
