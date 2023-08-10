@@ -510,6 +510,10 @@
     #menu-icon {
       display: block;
     }
+  
+    .home-content .about-text{
+      margin-top: 10px;
+   }
 
   
   .toggle-content p {
@@ -520,18 +524,19 @@
     margin: 20px auto;
   }
 
-  .btn-box{
-   justify-content: center; 
-  }
-  }
+  .img-box{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: auto;
+  margin-top: 30px;
+  padding: 5rem;
 
-    @media (max-width: 767px) {
-      
+  .btn-box{
+   justify-content: center;
   }
-  .toggle-content p {
-    color: #a01e1e;
-    font-family: sans-serif;
-    line-height: 1.5;
-    margin-top: 0.4rem;
-  }
- 
+  
+}
+
+ }
