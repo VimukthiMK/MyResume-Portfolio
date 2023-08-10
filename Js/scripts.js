@@ -1,3 +1,4 @@
+//Toggle  
 function toggle(){
     let x =document.getElementById("form-toggle");
     if(x.style.display === "none"){
@@ -8,14 +9,11 @@ function toggle(){
     }
 }
 
-let pop =document.getElementById("pop-up");
 
-function openPopup(){
-    pop.classList.add("open-popup");
-     
-}
-
-function closePopup(){
-    pop.classList.remove("open-popup");
-}
-
+//Navigation 
+ const menuIcon = document.getElementById('menu-icon');
+const navigateList = document.querySelector('.navigateList');
+        
+menuIcon.addEventListener('click', () => {
+navigateList.classList.toggle('open');
+        });
