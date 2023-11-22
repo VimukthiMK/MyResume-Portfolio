@@ -43,46 +43,51 @@
     </header>
     
     <!--------------Home Section-------------->
-    <section id="home" class="home">
-      <!-------Home Image------->
-        <div class="home-img">
-            <div class="img-box">
-                <img src="./Images/Vimukthi_Madushan.jpg" " alt="">
-            </div>
+
+    <section id="profile">
+      <!-- profile pic -->
+      <div class="section-pic-container">
+        <img src="./assets/Vimukthi.png" alt="profile picture" class="prof_img" />
+      </div>
+      <!-- Profile content -->
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Vimukthi Kulathilaka</h1>
+        <p class="section-text-p2">And I'm a Software Developer</p>
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Vimukthi-kulathilaka-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <!-------Home Content------->
-        <div class="home-content">
-            <h1>Hi! I'm Vimukthi Madushan</h1>
-            <div class="change-text">
-                <h3>And I'm a
-                    <span class="word">Software Developer</span>
-                </h3>
-            </div>
-
-            <p class="about-text">Welcome to my portfolio website. I am a passionate developer with experience in web technologies. Here, you can learn more about my projects and contact me for any inquiries. </p>
-
-            <div class="info-box">
-                <div class="email-info">
-                    <h5>Email :</h5>
-                    <span>vimukthikulathilaka@gmail.com</span>
-                </div>
-            </div>
-            <!-------Download Button------->
-            <div class="btn-box">
-                <a id="pdfLink" href="./Resources/SE.2019.018__CV-1.pdf" download="SE.2019.018__CV-1.pdf" class="btn">Download CV</a>
-
-            </div>
-            <!-------Social Media icons------->
-            <div class="social-icon">
-                <a href="https://www.facebook.com/profile.php?id=100010117337554&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
-                <a href="https://github.com/VimukthiMK"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://medium.com/@vimukthikulathilaka"><i class='bx bxl-medium'></i></i></a>
-                
-
-            </div>
+        <!-- Social media -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/VimukthiMK'"
+          />
+          <img
+            src="./assets/medium.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@vimukthikulathilaka'"
+          />
         </div>
-       
+      </div>
     </section>
 
     <!--------------About Section------------>
@@ -214,7 +219,7 @@
             <button onclick="closePopup()">Ok</button>
         </div>--> 
       </section>
-      
+
       <!-- Import javascript for hamburger menu -->
       <<script src="./Js/script.js"></script>
       
