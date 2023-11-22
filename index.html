@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styles.css"> <!--stylesheet-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Boxicons for social media and other-->
-    <script src="https://smtpjs.com/v3/smtp.js"> </script><!--stmp js-for emailing-->
-    <title>Vimukthi Madushan</title>
+    <link rel="stylesheet" href="./CSS/MediaQuery.css"> <!--Media Query-->
+    <title>Vimukthi Kulathilaka</title>
 </head>
 <body>
     
@@ -14,195 +13,525 @@
     <!--------------Header-------------->
 
     <header>
-        <div class="logo">
-            <span>Vimukthi</span>
-        </div>
-        <ul class="navigateList">
-            <li><a href="#home">Home</a></li>
+      <nav id="desktop-nav">
+        <div class="logo">Vimukthi</div>
+        <div>
+          <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#acaQualifications">Academic Qualifications</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div id="menu-icon" class="bx bx-menu">
-             
+          </ul>
         </div>
+      </nav>
+      <!--------------Hamburger nav-------------->
+      <nav id="hamburger-nav">
+        <div class="logo">Vimukthi</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
     </header>
     
     <!--------------Home Section-------------->
-    <section id="home" class="home">
-      <!-------Home Image------->
-        <div class="home-img">
-            <div class="img-box">
-                <img src="./Images/Vimukthi_Madushan.jpg" " alt="">
-            </div>
+
+    <section id="profile">
+      <!-- profile pic -->
+      <div class="section-pic-container">
+        <img src="./assets/Vimukthi.png" alt="profile picture" class="prof_img" />
+      </div>
+      <!-- Profile content -->
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Vimukthi Kulathilaka</h1>
+        <p class="section-text-p2" id="typing-text">And I'm a Software Developer</p>
+        
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Vimukthi-kulathilaka-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <!-------Home Content------->
-        <div class="home-content">
-            <h1>Hi! I'm Vimukthi Madushan</h1>
-            <div class="change-text">
-                <h3>And I'm a
-                    <span class="word">Software Developer</span>
-                </h3>
-            </div>
-
-            <p class="about-text">Welcome to my portfolio website. I am a passionate developer with experience in web technologies. Here, you can learn more about my projects and contact me for any inquiries. </p>
-
-            <div class="info-box">
-                <div class="email-info">
-                    <h5>Email :</h5>
-                    <span>vimukthikulathilaka@gmail.com</span>
-                </div>
-            </div>
-            <!-------Download Button------->
-            <div class="btn-box">
-                <a id="pdfLink" href="./Resources/SE.2019.018__CV-1.pdf" download="SE.2019.018__CV-1.pdf" class="btn">Download CV</a>
-
-            </div>
-            <!-------Social Media icons------->
-            <div class="social-icon">
-                <a href="https://www.facebook.com/profile.php?id=100010117337554&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
-                <a href="https://github.com/VimukthiMK"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://medium.com/@vimukthikulathilaka"><i class='bx bxl-medium'></i></i></a>
-                
-
-            </div>
+        <!-- Social media -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/VimukthiMK'"
+          />
+          <img
+            src="./assets/medium.png"
+            alt="My Medium profile"
+            class="icon"
+            onclick="location.href='https://medium.com/@vimukthikulathilaka'"
+          />
         </div>
-       
+      </div>
     </section>
 
     <!--------------About Section------------>
 
-    <section id="about" class="about">
-            <div class="toggle">
-                <input type="checkbox" id="faq-1">
-                <h1><label for="faq-1">About </label></h1>
-                <div class="toggle-content">
-                  <h2>About Myself</h2>
-                  <p>
-                    Welcome to my profile! I'm an enthusiastic and forward-looking undergraduate with a strong determination to succeed. 
-                    Currently, I'm searching for an internship that can offer valuable experiences and help me expand my skill set, shaping 
-                    my future career path. My main interests revolve around Data Science and Full Stack Development, where I'm captivated by the insights data can provide
-                       and the art of creating user-friendly web applications. These fields intrigue me due to their potential to revolutionize 
-                       industries and generate innovative solutions.
-                    </p>
-                    <h2>Beyond the Screen</h2>
-                    <p>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img
+            src="./assets/About-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Full-Stack Development <br />Data Science</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bsc(Hons)Software Engineering <br>2021-Present</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                      Welcome to my profile! I'm an enthusiastic and forward-looking undergraduate with a strong determination to succeed. 
+                      Currently, I'm searching for an internship that can offer valuable experiences and help me expand my skill set, shaping 
+                      my future career path. My main interests revolve around Data Science and Full Stack Development, where I'm captivated by the insights data can provide
+                      and the art of creating user-friendly web applications. These fields intrigue me due to their potential to revolutionize 
+                      industries and generate innovative solutions.
+            </p>
+            <br>
+            <p>
                       Outside of my professional pursuits, I believe in leading a well-rounded life. I find happiness in exploring new places and 
                       experiencing diverse cultures through travel. Music isn't just a tune to me; it's a way to express myself and find inspiration.
-                       I'm also an avid gamer, enjoying the blend of strategy and creativity in virtual worlds. Additionally, my curiosity about the 
-                       fusion of technology and mobility is fueled by my fascination with automobiles.
-                    </p>
-                </div>
-              </div>
-    </section> 
-
-    <!--------------Academic Qualifications Section------------>
-
-    <section id="acaQualifications" class="acaQualifications">
-        <div class="toggle">
-            <input type="checkbox" id="faq-2">
-            <h1><label for="faq-2">Academic Qualifications</label></h1>
-            <div class="toggle-content">
-              <div class="edulist">
-                <ul class="sessions">
-                    <li>
-                      <div class="header">University of Kelaniya</div>
-                      <p>Bsc(Hons)Software Engineering | 2021-Present <br>
-                        Current GPA : 3.5390</p>
-                    </li>
-                    <li>
-                      <div class="header">Ananda College, Colombo 10</div>
-                      <p>G.C.E Advanced Level Examination - 2019 <br>
-                        Physical Science Stream | 2A 1C | z-score - 1.6770</p>
-                    </li>
-                    <li>
-                        <div class="header">Ananda College, Colombo 10</div>
-                        <p>G.C.E Ordinary Level Examination - 2016 <br> 
-                            Results : 9A's</p>
-                      </li>
-                    </ul>
-              </div>
-            </div>
+                      I'm also an avid gamer, enjoying the blend of strategy and creativity in virtual worlds. Additionally, my curiosity about the 
+                      fusion of technology and mobility is fueled by my fascination with automobiles.
           </div>
-</section>  
-
-<!--------------Skills Section------------>
-<section id="skills" class="skills">
-    <div class="toggle">
-        <input type="checkbox" id="faq-3">
-        <h1><label for="faq-3">Skills</label></h1>
-        <div class="toggle-content">
-          <div class="skill-img">
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="./Images/webdev.jpg" />
-              </div>
-              <div class="card__face card__face--back">
-                <img src="./Images/webdev.jpg" />
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="./Images/dscience.jpg" />
-              </div>
-              <div class="card__face card__face--back">
-                <img src="./Images/dscience.jpg" />
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="./Images/mobdev.jpg" />
-              </div>
-              <div class="card__face card__face--back">
-                <img src="./Images/mobdev.jpg" />
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__face card__face--front">
-                <img src="./Images/photography.avif" />
-              </div>
-              <div class="card__face card__face--back">
-                <img src="./Images/photography.avif" />
-              </div>
-            </div>
         </div>
       </div>
-</section> 
-    
-    <!--------------Contact Section------------>     
-    <section id="contact" class="contact">
-        <div class="main-text">
-            <span>Ask me any question</span>
-            <h2>Contact Me</h2>
-            <!--<button class="toggle-btn" onclick="toggle()"><h2>Contact Me</h2></button>-->
-        </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
 
-        <div id="form-toggle">
-        <form class="form-contact">
-    
-          <input type="text" id="name" required placeholder="Your Name">
-  
-          
-          <input type="email" id="email" required placeholder="Your Email">
-            <input type="number" id="mob-number"placeholder="Your Mobile No" >
-          <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
-   
-          <div class="form-btn">
-            <button id="submit" type="submit">Send Message</button>
+    <!--------------Experience Section------------>
+
+    <section id="experience">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <!-- first Container -->
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>Boostrap</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>SASS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+
+            <br>
+
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Springboot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            <article>
+              <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
           </div>
-        </form>
+
+          <!-- Second container -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermdediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+
+            <br>
+
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jira</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+            <br>
+            
+            <h2 class="experience-sub-title">Cloud</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Amazon AWS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
         </div>
-       <!--  <div id="pop-up" class="pop-up">
-            <img src="./Images/Green-tick.png" alt="">
-            <h2>Thank You!</h2>
-            <p>Your response has been submitted Successfully </p>
-            <button onclick="closePopup()">Ok</button>
-        </div>--> 
-      </section>
-      <script src="./Js/scripts.js"></script>
-      <script src="./Js/emailsender.js"></script>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+<!--------------Projects Section------------>
+<section id="projects">
+  <p class="section-text-p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project 1.PNG"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Phonez (Group)</h2>
+        <p>Phonez is a full stack e-commerce website with REST APIs.</p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn project-btn"
+            onclick="location.href='https://github.com/Kajaluxshan7/MobileShopApplication'"
+          >
+            Github
+          </button>
+        
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project 2.PNG"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+      
+        <h2 class="experience-sub-title project-title">DiaPredictor</h2>
+        <p>Machine Learning Project built in Python, utilizing SVM Classifier to predict Diabetes.</p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/VimukthiMK/DiaPredictor'"
+          >
+            Github
+          </button>
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/project 3.PNG"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Portfolio </h2>
+        <p>A simple resume webpage with responsiveness.</p>
+        <br>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/VimukthiMK/Portfolio-Vimukthi_Kulathilaka'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='#contact'"
+  />
+</section>
+
+    <!--------------Contact Section------------>     
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vimukthikulathilaka@gmail.com">vimukthikulathilaka@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vimukthi-kulathilaka-76bb39229">vimukthi Kulathilaka</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <p>Copyright &#169; 2023 Vimukthi Kulathilaka. All Rights Reserved.</p>
+    </footer>
+
+      <!-- Import javascript for hamburger menu -->
+      <script src="./Js/script.js"></script>
+      <script src="./Js/word_animator.js"></script>
       
       
       
