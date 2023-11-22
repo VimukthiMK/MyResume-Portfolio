@@ -224,6 +224,9 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: var(--link-hover-color);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .title {
