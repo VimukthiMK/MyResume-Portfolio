@@ -1,18 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import'../CSS/style.css'
-import ToggleMenu from './Togglemenu'
+import'./Header.css'
+import ToggleMenu from '../Togglemenu/Togglemenu'
+
 
 export default function Header() {
   return (
-    <><nav id="desktop-nav">
+    <>
+    <nav id="desktop-nav">
       <div className="logo">Vimukthi</div>
       <div>
         <ul className="nav-links">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/experience">Experience</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+            
+           
         </ul>
       </div>
     </nav>
@@ -28,10 +32,10 @@ export default function Header() {
             <span></span>
           </div>
           <div className="menu-links">
-            <li><Link to="/about" onClick={ToggleMenu}>About</Link></li>
-            <li><Link to="/experience" onClick={ToggleMenu}>Experience</Link></li>
-            <li><Link to="/projects" onClick={ToggleMenu}>Projects</Link></li>
-            <li><Link to="/contact" onClick={ToggleMenu}>Contact</Link></li>
+          <li><a href="#about" onClick={ToggleMenu}>About</a></li>
+          <li><a href="#experience" onClick={ToggleMenu}>Experience</a></li>
+          <li><a href="#projects" onClick={ToggleMenu}>Projects</a></li>
+          <li><a href="#contact" onClick={ToggleMenu}>Contact</a></li>
           </div>
         </div>
       </nav>

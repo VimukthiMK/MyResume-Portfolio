@@ -1,8 +1,9 @@
 import React from 'react';
-import profileImage from '../Assets/Vimukthi.png';
-import linkedinIcon from '../Assets/linkedin.png';
-import githubIcon from '../Assets/github.png';
-import mediumIcon from '../Assets/medium.png';
+import profileImage from '../../Assets/Vimukthi.png';
+import linkedinIcon from '../../Assets/linkedin.png';
+import githubIcon from '../../Assets/github.png';
+import mediumIcon from '../../Assets/medium.png';
+import './Profile.css'
 
 const Profile = () => {
   const downloadCV = () => {
@@ -24,9 +25,14 @@ const Profile = () => {
   };
 
   return (
+    <>
     <section id="profile">
       <div className="section-pic-container">
-        <img src={profileImage} alt="profile picture" className="prof_img" />
+      <img
+            src={profileImage}
+            alt="profile picture"
+            className="iprof_img"
+      />
       </div>
       <div className="section-text">
         <p className="section-text-p1">Hello, I'm</p>
@@ -36,7 +42,7 @@ const Profile = () => {
           <button className="btn btn-color-2" onClick={downloadCV}>
             Download CV
           </button>
-          <button className="btn btn-color-1" onClick={() => window.location.href = './contact'}>
+          <button className="btn btn-color-1" onClick={() => window.location.href = '.#contact'}>
             Contact Info
           </button>
         </div>
@@ -62,6 +68,7 @@ const Profile = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
