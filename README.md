@@ -13,6 +13,6 @@ Welcome to my portfolio website! This repository contains the source code for my
 
 ## Deployment
 
-The website is deployed and accessible <a href ="https://vimukthimk.github.io/Portfolio-Vimukthi_Kulathilaka/">Here</a>. Feel free to explore and reach out!
+The website is deployed and accessible <a href ="https://vimukthimk.github.io/MyResume-Portfolio/">Here</a>. Feel free to explore and reach out!
 <br><br>
 Thank you for visiting my portfolio! If you have any feedback or suggestions, please let me know.
