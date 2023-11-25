@@ -1,4 +1,4 @@
-# Portfolio-Vimukthi_Kulathilaka 
+# MyResume-Portfolio
 
 Welcome to my portfolio website! This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and contact information.Also included the functions in the portfolio.
 ## Webpage Content
